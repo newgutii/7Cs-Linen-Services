@@ -20,12 +20,12 @@ export default function Home() {
               THE INVISIBLE
             </h1>
             <h1 
-              className="heading-xl absolute top-16 md:top-24 left-10 md:left-48 z-0 opacity-40 mix-blend-overlay"
-              style={{ WebkitTextStroke: '2px rgba(253,252,240,0.4)', WebkitTextFillColor: 'transparent' }}
+              className="heading-xl absolute top-16 md:top-24 left-10 md:left-48 z-0 opacity-40 mix-blend-overlay text-emerald-500"
+              style={{ WebkitTextStroke: '2px rgba(16, 185, 129, 0.4)', WebkitTextFillColor: 'transparent' }}
             >
               STANDARD
             </h1>
-            <h1 className="heading-xl text-[#FDFCF0] mt-12 md:mt-20 ml-5 md:ml-32 relative z-30">
+            <h1 className="heading-xl mt-12 md:mt-20 ml-5 md:ml-32 relative z-30 bg-gradient-to-br from-[#FDFCF0] via-white to-emerald-200 bg-clip-text text-transparent">
               OF EXCELLENCE.
             </h1>
           </div>
@@ -36,9 +36,9 @@ export default function Home() {
             </p>
 
             <div className="mt-16 w-max">
-              <Link href="/services/restaurant-linens" className="group flex items-center space-x-8 text-[#FDFCF0] pb-3 border-b border-white/20 hover:border-[#FDFCF0] transition-all">
-                <span className="text-base uppercase tracking-[0.3em] font-bold">Initiate Service</span>
-                <div className="p-4 rounded-full bg-white/5 group-hover:bg-[#FDFCF0] group-hover:text-[#050505] transition-colors duration-500">
+              <Link href="/services/restaurant-linens" className="group flex items-center space-x-8 text-[#FDFCF0] pb-3 border-b border-emerald-500/30 hover:border-emerald-400 transition-all">
+                <span className="text-base uppercase tracking-[0.3em] font-bold group-hover:text-emerald-400 transition-colors">Initiate Service</span>
+                <div className="p-4 rounded-full bg-emerald-500/10 text-emerald-400 group-hover:bg-emerald-400 group-hover:text-[#050505] transition-colors duration-500 shadow-[0_0_15px_rgba(16,185,129,0.2)] group-hover:shadow-[0_0_25px_rgba(16,185,129,0.5)]">
                    <ArrowDownRight className="w-5 h-5 transition-transform group-hover:rotate-[-45deg]" />
                 </div>
               </Link>
@@ -61,7 +61,7 @@ export default function Home() {
                 </h2>
                 <div className="w-full aspect-[3/4] bg-[#111111] relative overflow-hidden border border-white/10 group">
                    <div 
-                     className="absolute inset-0 bg-cover bg-center opacity-30 grayscale mix-blend-luminosity group-hover:opacity-80 group-hover:grayscale-0 transition-all duration-[1.5s]" 
+                     className="absolute inset-0 bg-cover bg-center opacity-60 mix-blend-overlay group-hover:opacity-90 group-hover:scale-105 transition-all duration-[2s] ease-out" 
                      style={{ backgroundImage: "url('https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?q=80&w=1200')" }}
                    />
                 </div>
@@ -73,17 +73,17 @@ export default function Home() {
                    When the front of house is fully seated, there is no margin for error. Our logistics and textile management act as an <span className="text-[#FDFCF0] font-medium">invisible extension</span> of your culinary brigade.
                 </p>
                 <div className="flex flex-col border-t border-white/10">
-                   <Link href="/services/restaurant-linens" className="flex border-b border-white/10 py-8 justify-between items-center group cursor-pointer hover:bg-white/5 px-6 -mx-6 transition-colors">
-                      <h3 className="text-2xl uppercase tracking-[0.1em] font-bold text-white/50 group-hover:text-[#FDFCF0] transition-colors">Restaurant Linens</h3>
-                      <ArrowRight className="w-6 h-6 text-white/30 group-hover:text-[#FDFCF0] transition-colors" />
+                   <Link href="/services/restaurant-linens" className="flex border-b border-white/10 py-8 justify-between items-center group cursor-pointer hover:bg-emerald-950/30 px-6 -mx-6 transition-colors">
+                      <h3 className="text-2xl uppercase tracking-[0.1em] font-bold text-white/50 group-hover:text-emerald-400 transition-colors">Restaurant Linens</h3>
+                      <ArrowRight className="w-6 h-6 text-white/30 group-hover:text-emerald-400 transition-colors group-hover:translate-x-2" />
                    </Link>
-                   <Link href="/services/kitchen-apparel" className="flex border-b border-white/10 py-8 justify-between items-center group cursor-pointer hover:bg-white/5 px-6 -mx-6 transition-colors">
-                      <h3 className="text-2xl uppercase tracking-[0.1em] font-bold text-white/50 group-hover:text-[#FDFCF0] transition-colors">Kitchen Apparel</h3>
-                      <ArrowRight className="w-6 h-6 text-white/30 group-hover:text-[#FDFCF0] transition-colors" />
+                   <Link href="/services/kitchen-apparel" className="flex border-b border-white/10 py-8 justify-between items-center group cursor-pointer hover:bg-emerald-950/30 px-6 -mx-6 transition-colors">
+                      <h3 className="text-2xl uppercase tracking-[0.1em] font-bold text-white/50 group-hover:text-emerald-400 transition-colors">Kitchen Apparel</h3>
+                      <ArrowRight className="w-6 h-6 text-white/30 group-hover:text-emerald-400 transition-colors group-hover:translate-x-2" />
                    </Link>
-                   <Link href="/services/facility-services" className="flex border-b border-white/10 py-8 justify-between items-center group cursor-pointer hover:bg-white/5 px-6 -mx-6 transition-colors">
-                      <h3 className="text-2xl uppercase tracking-[0.1em] font-bold text-white/50 group-hover:text-[#FDFCF0] transition-colors">Facility Services</h3>
-                      <ArrowRight className="w-6 h-6 text-white/30 group-hover:text-[#FDFCF0] transition-colors" />
+                   <Link href="/services/facility-services" className="flex border-b border-white/10 py-8 justify-between items-center group cursor-pointer hover:bg-emerald-950/30 px-6 -mx-6 transition-colors">
+                      <h3 className="text-2xl uppercase tracking-[0.1em] font-bold text-white/50 group-hover:text-emerald-400 transition-colors">Facility Services</h3>
+                      <ArrowRight className="w-6 h-6 text-white/30 group-hover:text-emerald-400 transition-colors group-hover:translate-x-2" />
                    </Link>
                 </div>
              </div>

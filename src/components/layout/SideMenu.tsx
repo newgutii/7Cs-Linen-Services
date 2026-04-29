@@ -60,9 +60,9 @@ export function SideMenu() {
               <Link 
                 key={item.name} 
                 href={item.href}
-                className={`text-lg font-medium transition-all duration-300 flex items-center group uppercase tracking-wider ${isActive ? 'text-[#FDFCF0]' : 'text-white/50 hover:text-[#FDFCF0]'}`}
+                className={`text-lg font-medium transition-all duration-300 flex items-center group uppercase tracking-wider ${isActive ? 'text-emerald-400' : 'text-white/50 hover:text-[#FDFCF0]'}`}
               >
-                {isActive && <motion.span layoutId="indicator" className="w-2 h-2 bg-[#FDFCF0] rounded-full mr-4" />}
+                {isActive && <motion.span layoutId="indicator" className="w-2 h-2 bg-emerald-500 rounded-full mr-4 shadow-[0_0_10px_rgba(16,185,129,0.8)]" />}
                 {!isActive && <span className="w-2 h-2 mr-4 opacity-0 group-hover:opacity-100 transition-opacity bg-white/20 rounded-full" />}
                 {item.name}
               </Link>
@@ -71,7 +71,7 @@ export function SideMenu() {
         </nav>
 
         <div className="mt-auto pt-12">
-          <Link href="/quote" className="w-full flex items-center justify-between px-6 py-4 bg-[#FDFCF0] text-[#050505] font-bold uppercase tracking-widest text-sm hover:bg-white transition-colors group">
+          <Link href="/quote" className="w-full flex items-center justify-between px-6 py-4 bg-emerald-600 text-white font-bold uppercase tracking-widest text-sm hover:bg-emerald-500 transition-colors group rounded-sm shadow-lg shadow-emerald-500/20">
             Get Quote
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
@@ -136,7 +136,7 @@ export function SideMenu() {
                 <Link 
                   href="/quote" 
                   onClick={() => setMobileMenuOpen(false)}
-                  className="inline-flex items-center text-xl font-bold uppercase tracking-widest text-[#050505] border-b-2 border-[#050505] pb-2"
+                  className="inline-flex items-center text-xl font-bold uppercase tracking-widest text-emerald-700 border-b-2 border-emerald-700 pb-2 hover:text-emerald-500 hover:border-emerald-500 transition-colors"
                 >
                   Request Proposal <ArrowRight className="ml-4 w-6 h-6" />
                 </Link>
